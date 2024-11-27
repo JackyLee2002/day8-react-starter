@@ -1,16 +1,15 @@
-import { useState } from "react"
+import { useState } from "react";
 
-export default function Counter() {
-    const [count, setCount] = useState(0);
-    return (
-        <div>
-            <h1>Counter</h1>
-            <div>            
-                <button onClick={() => setCount(count + 1)}>+</button>
-                <span style={{paddingLeft: "20px", paddingRight: "20px"}}>{count}</span>
-                <button onClick={() => setCount(count - 1)}>-</button>
-            </div>
+const Counter = () => {
+  const [count, setCounter] = useState(0);
 
-        </div>
-    )
-}
+  return (
+    <div>
+      <button style={{marginRight: "5px"}} onClick={() => setCounter(count + 1)}>+</button>
+      {count}
+      <button style={{marginLeft: "5px"}} onClick={() => setCounter(count - 1)}>-</button>
+    </div>
+  );
+};
+
+export default Counter;
