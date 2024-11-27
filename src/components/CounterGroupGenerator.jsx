@@ -4,15 +4,13 @@ import { useState } from "react";
 const CounterGroupGenerator = (props) => {
   const [size, setSize] = useState(0);
 
-  const { setSize: setHigherLevelSize } = props;
-
   const onChangeHandler = (event) => {
     const value = Math.max(0, Math.min(20, parseInt(event.target.value, 10) || 0));
     setSize(value);
   };
 
   const resetHandler = () => {
-    setHigherLevelSize(size);
+    props.setGlobalSize(size);
   };
 
   return (
