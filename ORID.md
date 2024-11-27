@@ -2,6 +2,6 @@ O: I learnt about Flyway and Object Mapper for backend and React for frontend to
 
 R: Fascinating
 
-I: Never having used Flyway before, we manage database state and schemas manually, making it difficult to maintain stable schemas across different microservices and different environment, including Production.
+I: Never having used Flyway before, we manage database state and schemas manually, making it difficult to maintain stable schemas across different microservices and different environment, including Production. 
 
-D: I plan to become more familiar with Spring Data JPA and its advanced features, including some I rarely use, like custom repository implementations to generate SQL using code and auditing. This will help me expand my knowledge of the framework and support a larger variety of use cases while making sure that correct usage of Spring Data JPA with sufficient and comprehensive testing.
+D: However, since OOCL has its own practice for upsert database schemas and data. Such practice can not be used easily in our case. However, being able to properly maintain databases with a large team is useful in a lot of cases and I will also adopt Flyway in my own personal projects to ensure database schema and data integrity.
