@@ -1,7 +1,6 @@
 import Counter from "./Counter";
 
-const CounterGroup = (props) => {
-  const { sizeArray, realCounts, setRealCounts } = props;
+const CounterGroup = ({ sizeArray, realCounts, setRealCounts }) => {
 
   const updateRealCounts = (index, value) => {
     const newCounts = [...realCounts];
