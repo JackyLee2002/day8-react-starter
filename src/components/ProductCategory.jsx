@@ -7,7 +7,12 @@ export default function ProductCategory({productCategory}) {
     <div style={{width: "100%"}}>
         <span className="product-name">{productCategory.name}</span>
         {productCategory.productItems.map((productItem, index) => {
-            return <ProductItem productItem={productItem} key={productItem.name + index}/>
+            return (<div className="product-item">
+                <ProductItem  
+                productItem={productItem} 
+                key={productItem.name + index}/>
+                </div>
+                )
         })}
     </div>
   )
