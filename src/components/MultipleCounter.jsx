@@ -16,7 +16,7 @@ const MultipleCounter = () => {
 
   return (
     <div>
-      <CounterGroupGenerator size={size} setGlobalSize={setSize} />
+      <CounterGroupGenerator setGlobalSize={setSize} />
       <CountersSum realCounts={realCounts} />
       <CounterGroup size={size} sizeArray={sizeArray} realCounts={realCounts} setRealCounts={setRealCounts}/>
     </div>

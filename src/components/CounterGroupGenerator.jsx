@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const CounterGroupGenerator = (props) => {
+const CounterGroupGenerator = ({setGlobalSize}) => {
   const [size, setSize] = useState(0);
 
   const onChangeHandler = (event) => {
@@ -10,7 +10,7 @@ const CounterGroupGenerator = (props) => {
   };
 
   const resetHandler = () => {
-    props.setGlobalSize(size);
+    setGlobalSize(size);
   };
 
   return (
