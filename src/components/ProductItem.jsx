@@ -1,11 +1,6 @@
 import "./ProductItem.css"
 
-export default function ProductItem() {
-    let productItem = {
-        name: "Football",
-        price: 49.99,
-        status: true
-    }
+export default function ProductItem({productItem}) {
 
     const isProducInStock = !!productItem.status
 
