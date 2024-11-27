@@ -1,7 +1,6 @@
 import Counter from "./Counter";
 
 const CounterGroup = ({ sizeArray, realCounts, setRealCounts }) => {
-
   const updateRealCounts = (index, value) => {
     const newCounts = [...realCounts];
     newCounts[index] = value;
@@ -10,12 +9,14 @@ const CounterGroup = ({ sizeArray, realCounts, setRealCounts }) => {
 
   return (
     <div>
-        {sizeArray.map((_,index) => (
-          <Counter 
+      {sizeArray.map((_, index) => (
+        <Counter
           index={index}
           count={realCounts[index]}
           setCount={updateRealCounts}
-          id={index + `${Math.random()}`} key={index +`${Math.random()}`} />
+          id={index + `${Math.random()}`}
+          key={index + `${Math.random()}`}
+        />
       ))}
     </div>
   );

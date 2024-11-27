@@ -11,14 +11,18 @@ const MultipleCounter = () => {
   useEffect(() => {
     setSizeArray(Array.from({ length: size }));
     setRealCounts(Array.from({ length: size }).fill(0));
-  },[size]);
-
+  }, [size]);
 
   return (
     <div>
       <CounterGroupGenerator setGlobalSize={setSize} />
       <CountersSum realCounts={realCounts} />
-      <CounterGroup size={size} sizeArray={sizeArray} realCounts={realCounts} setRealCounts={setRealCounts}/>
+      <CounterGroup
+        size={size}
+        sizeArray={sizeArray}
+        realCounts={realCounts}
+        setRealCounts={setRealCounts}
+      />
     </div>
   );
 };

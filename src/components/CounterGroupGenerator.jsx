@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-
-const CounterGroupGenerator = ({setGlobalSize}) => {
+const CounterGroupGenerator = ({ setGlobalSize }) => {
   const [size, setSize] = useState(0);
 
   const onChangeHandler = (event) => {
@@ -23,7 +22,7 @@ const CounterGroupGenerator = ({setGlobalSize}) => {
         type={"number"}
         value={size}
         onChange={onChangeHandler}
-      ></input>
+      />
       <button onClick={resetHandler}>Reset</button>
     </div>
   );
