@@ -1,0 +1,7 @@
+O: I learnt about Flyway and Object Mapper for backend and React for frontend today. Flyway can be used to perform database migration and change management since it includes audit log for SQL changes applied to the database. In addition, Object Mapping from Entity to Data Transfer Object (or vice versa) is critical for developing business application since it reduces complexity, increases readability, simplifies future improvement and prevent unwanted data from being exposed from API calls. The use of DTO can also minimize the amount of data sent for API requests, reducing network traffic and unwanted data input. React is a simple frontend framework to build Reactive Single Page application.
+
+R: Fascinating
+
+I: Never having used Flyway before, we manage database state and schemas manually, making it difficult to maintain stable schemas across different microservices and different environment, including Production.
+
+D: I plan to become more familiar with Spring Data JPA and its advanced features, including some I rarely use, like custom repository implementations to generate SQL using code and auditing. This will help me expand my knowledge of the framework and support a larger variety of use cases while making sure that correct usage of Spring Data JPA with sufficient and comprehensive testing.
