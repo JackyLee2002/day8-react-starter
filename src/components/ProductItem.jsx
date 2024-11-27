@@ -4,13 +4,16 @@ export default function ProductItem() {
     let productItem = {
         name: "Football",
         price: 49.99,
-        status: false
+        status: true
     }
+
+    const isProducInStock = !!productItem.status
+
     return (
         <div className="product-item-wrapper">
-        <span>{productItem.name}</span>
+        <span className={isProducInStock ? "in-stock" : "out-of-stock"}>{productItem.name}</span>
         <span>{productItem.price}</span>
-        <span>{!!productItem.status ? "In stock": "Out of stock"}</span>
+        <span>{isProducInStock ? "In stock": "Out of stock"}</span>
         </div>
     )
 }

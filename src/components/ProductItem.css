@@ -3,3 +3,11 @@
     display: flex;
     justify-content: space-between; 
 }
+
+.in-stock {
+    color: green
+}
+
+.out-of-stock {
+    color: red
+}
